@@ -10,7 +10,7 @@ from time import sleep
 ids = []
 
 
-url = 'https://tg.i-c-a.su/json/programmerjokes/1?limit=100'
+url = 'https://tg.i-c-a.su/json/programmerjokes/2?limit=100'
 r = urlopen(url)
 data = json.loads(str(r.read().decode("utf-8")))
 
