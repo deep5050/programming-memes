@@ -1,5 +1,6 @@
 ![godfather](https://socialify.git.ci/deep5050/godfather/image?description=1&owner=1&pattern=Charlie%20Brown&theme=Dark)
-https://img.shields.io/badge/MEMES%20COUNT-1200-green?style=for-the-badge
+![count](https://img.shields.io/badge/MEMES%20COUNT-1200-green?style=for-the-badge)
+
 <p align="center">
 
 
