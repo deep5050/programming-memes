@@ -3,14 +3,12 @@ from urllib.request import urlopen
 import os
 import re
 import pickle
-import requests
-import shutil
 from time import sleep
 
 ids = []
 
 
-url = 'https://tg.i-c-a.su/json/programmerjokes/6?limit=100'
+url = 'https://tg.i-c-a.su/json/programmerjokes/7?limit=100'
 r = urlopen(url)
 data = json.loads(str(r.read().decode("utf-8")))
 
