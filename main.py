@@ -8,7 +8,7 @@ from time import sleep
 ids = []
 
 
-url = 'https://tg.i-c-a.su/json/programmerjokes/7?limit=100'
+url = 'https://tg.i-c-a.su/json/programmerjokes/9?limit=100'
 r = urlopen(url)
 data = json.loads(str(r.read().decode("utf-8")))
 
@@ -30,12 +30,13 @@ for message in data['messages']:
         # download image
         img_url = 'https://tg.i-c-a.su/media/programmerjokes/'+str(id)
         response = urlopen(img_url)
-        img_file = open('memes/'+str(id)+'.png','wb')
+        img_file = open('memes/2/'+str(id)+'.png','wb')
         img_file.write(response.read())
         img_file.close()
         print(str(id)+': downloaded')
         sleep(2)
         ids.append(int(message['id']))
+
     except:
         print("Error while downloading:"+str(id))
 
@@ -43,3 +44,5 @@ for message in data['messages']:
 with open('ids.data', 'wb') as filehandle:
     # store the data as binary data stream
     pickle.dump(sorted(ids), filehandle)
+
+
