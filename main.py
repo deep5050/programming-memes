@@ -8,10 +8,11 @@ from time import sleep
 ids = []
 
 
-url = 'https://tg.i-c-a.su/json/programmerjokes/10?limit=100'
+url = 'https://tg.i-c-a.su/json/programmerjokes/12?limit=100'
 r = urlopen(url)
 data = json.loads(str(r.read().decode("utf-8")))
 
+count = 0
 
 with open('ids.data', 'rb') as filehandle:
     # read the data as binary data stream
@@ -36,6 +37,7 @@ for message in data['messages']:
         print(str(id)+': downloaded')
         sleep(2)
         ids.append(int(message['id']))
+        count = count + 1
 
     except:
         print("Error while downloading:"+str(id))
@@ -45,4 +47,5 @@ with open('ids.data', 'wb') as filehandle:
     # store the data as binary data stream
     pickle.dump(sorted(ids), filehandle)
 
+print("count: ",str(count))
 
