@@ -3,7 +3,25 @@
 <img align=center src="https://img.shields.io/badge/MEMES%20COUNT-1480-green?style=for-the-badge">
 </p>
 
-## WORK IN PROGRESS
+## Some ideas on what to do with it :smile:
+
+1. Build an API
+2. Treat it as a tiny meme database
+3. Build a GitHub action that comment on a newly raised issue with a random meme :wink:
+4. Do the F** you want to do with this
+
+
+> `memes.josn` contains all the information you need to know about if you are planning to use it as a service.
+
+## Sample
+<div align=center>
+  
+ <p align=center>
+  <img src=https://github.com/deep5050/programming-memes/raw/main/memes/1/1165.png width=400px>
+  <img src=https://github.com/deep5050/programming-memes/raw/main/memes/1/1517.png width=400px>
+  </p>
+  
+</div>
 
 ## Support
 
