@@ -8,7 +8,7 @@ from time import sleep
 ids = []
 
 
-url = 'https://tg.i-c-a.su/json/programmerjokes/15?limit=100'
+url = 'https://tg.i-c-a.su/json/programmerjokes/1?limit=100'
 r = urlopen(url)
 data = json.loads(str(r.read().decode("utf-8")))
 
@@ -31,7 +31,7 @@ for message in data['messages']:
         # download image
         img_url = 'https://tg.i-c-a.su/media/programmerjokes/'+str(id)
         response = urlopen(img_url)
-        img_file = open('memes/2/'+str(id)+'.png','wb')
+        img_file = open('memes/3/'+str(id)+'.png','wb')
         img_file.write(response.read())
         img_file.close()
         print(str(id)+': downloaded')
