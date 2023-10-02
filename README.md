@@ -11,7 +11,7 @@
 4. Do the F** you want to do with this
 
 
-> `memes.josn` contains all the information you need to know about if you are planning to use it as a service.
+> `memes.json` contains all the information you need to know about if you are planning to use it as a service.
 
 ## Sample
 <div align=center>
